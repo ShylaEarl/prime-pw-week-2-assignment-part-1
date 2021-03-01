@@ -72,8 +72,58 @@ else if(pets > allowedPets) {
 // assigns the highest value to `mostPets`. There's several possibilities --
 // be sure to think through all the scenarios.
 // console.log `mostPets` after the conditional has run.
-// let mostPets =
+let mostPets;
+
+if(pets > friendsPets){
+  mostPets = pets
+}
+else if(pets < friendsPets){
+  mostPets = friendsPets
+}
+
+console.log('The largest amount of pets =', mostPets);
 
 // 17 - Rewrite question 16 with a `switch` statement. You'll need to do research!
+
+// getMostPets();
+
+switch(mostPets){
+  case 0:
+    mostPets = pets > friendsPets;
+    // console.log('I have the most pets!');
+    break;
+  case 1:
+    mostPets = pets < friendsPets;
+    // console.log('My friend Tony has the most pets!');
+    break;
+  default:
+    // console.log('There are', mostPets, 'pets.');
+}
+
+console.log('The most amount of pets =', mostPets);
+
+// switch(mostPets){
+//   case pets > friendsPets:
+//     console.log('I have the most pets!');
+//     break;
+//   case pets < friendsPets:
+//     console.log('My friend Tony has the most pets!');
+//     break;
+//   default:
+//     // console.log('There are', mostPets, 'pets.');
+// }
+
+// switch(mostPets){
+//   case 0:
+//     pets > friendsPets
+//     console.log('I have the most pets!');
+//     break;
+//   case 1:
+//     pets < friendsPets
+//     console.log('My friend Tony has the most pets!');
+//     break;
+//   default:
+//     // console.log(`There are {mostPets} pets.`);
+// }
 
 // 18 -- Rewrite question 13 with a `ternary` operator. You'll need to do research!
