@@ -28,7 +28,7 @@ let pets = 0;
 console.log('I have', pets, 'pets.');
 // 10 - Create a variable called `friendsPets` and assign it the value of the number of pets your friend has
 let friendsPets = 3;
-console.log('My friend Tony has', friendsPets, 'pets.');
+console.log('My friend has', friendsPets, 'pets.');
 // 11 - Add two pets to your `pets` variable
 pets = pets + 2;
 console.log('I really like animals though, so I now have', pets, 'pets.');
@@ -84,46 +84,17 @@ else if(pets < friendsPets){
 console.log('The largest amount of pets =', mostPets);
 
 // 17 - Rewrite question 16 with a `switch` statement. You'll need to do research!
-
-// getMostPets();
-
 switch(mostPets){
-  case 0:
-    mostPets = pets > friendsPets;
-    // console.log('I have the most pets!');
+  case pets:
+    console.log('I have the most pets!');
     break;
-  case 1:
-    mostPets = pets < friendsPets;
-    // console.log('My friend Tony has the most pets!');
+  case friendsPets:
+    console.log('My friend has the most pets.');
     break;
   default:
-    // console.log('There are', mostPets, 'pets.');
+    console.log('No dice!');
+    break;
 }
 
-console.log('The most amount of pets =', mostPets);
-
-// switch(mostPets){
-//   case pets > friendsPets:
-//     console.log('I have the most pets!');
-//     break;
-//   case pets < friendsPets:
-//     console.log('My friend Tony has the most pets!');
-//     break;
-//   default:
-//     // console.log('There are', mostPets, 'pets.');
-// }
-
-// switch(mostPets){
-//   case 0:
-//     pets > friendsPets
-//     console.log('I have the most pets!');
-//     break;
-//   case 1:
-//     pets < friendsPets
-//     console.log('My friend Tony has the most pets!');
-//     break;
-//   default:
-//     // console.log(`There are {mostPets} pets.`);
-// }
-
 // 18 -- Rewrite question 13 with a `ternary` operator. You'll need to do research!
+adventurous ? console.log('Adventures are great!') : console.log('How about we stay home?');
